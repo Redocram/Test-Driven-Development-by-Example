@@ -16,10 +16,10 @@ namespace Money.Unit.Tests
       Dollar five = new Dollar(5);
 
       // ACT
-      five.Times(2);
+      Dollar value = five.Times(2);
 
       // ASSERT
-      five.Amount.Should().Be(10);
+      value.Amount.Should().Be(10);
     }
 
     [Test]
@@ -29,12 +29,12 @@ namespace Money.Unit.Tests
       Dollar five = new Dollar(5);
 
       // ACT
-      Dollar product = five.Times(2);
-      product = five.Times(3);
+      Dollar product1 = five.Times(2);
+      Dollar product2 = five.Times(3);
 
       // ASSERT
-      product.Amount.Should().Be(10);
-      product.Amount.Should().Be(15);
+      product1.Amount.Should().Be(10);
+      product2.Amount.Should().Be(15);
     }
   }
 }
