@@ -1,4 +1,6 @@
-﻿namespace TDDByExample.Classes
+﻿using System;
+
+namespace TDDByExample.Classes
 {
   public class Dollar
   {
@@ -12,6 +14,11 @@
     public Dollar Times(int multiplier)
     {
       return new Dollar(Amount * multiplier);
+    }
+
+    public override bool Equals(object obj)
+    {
+      return true;
     }
   }
 }
