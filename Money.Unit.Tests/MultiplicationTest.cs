@@ -19,7 +19,7 @@ namespace Money.Unit.Tests
       five.Times(2);
 
       // ASSERT
-      five.amount.Should().Be(10);
+      five.Amount.Should().Be(10);
     }
   }
 }
