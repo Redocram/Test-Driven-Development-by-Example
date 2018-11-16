@@ -6,11 +6,12 @@
 
     public Dollar(int amount)
     {
+      Amount = amount;
     }
 
     public void Times(int multiplier)
     {
-      Amount = 5 * 2;
+      Amount *= 2;
     }
   }
 }
