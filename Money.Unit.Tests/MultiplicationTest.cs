@@ -36,5 +36,16 @@ namespace Money.Unit.Tests
       product1.Amount.Should().Be(10);
       product2.Amount.Should().Be(15);
     }
+
+    [Test]
+    public void Two_Istances_Of_Dollar_With_The_Same_Amount_Should_Be_Equal()
+    {
+      // ARRANGE
+
+      // ACT
+
+      // ASSERT
+      new Dollar(5).Should().Be(new Dollar(5));
+    }
   }
 }
