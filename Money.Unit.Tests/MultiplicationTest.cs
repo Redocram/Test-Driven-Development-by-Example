@@ -21,5 +21,20 @@ namespace Money.Unit.Tests
       // ASSERT
       five.Amount.Should().Be(10);
     }
+
+    [Test]
+    public void TestMultiplication()
+    {
+      // ARRANGE
+      Dollar five = new Dollar(5);
+
+      // ACT
+      Dollar product = five.Times(2);
+      product = five.Times(3);
+
+      // ASSERT
+      product.Amount.Should().Be(10);
+      product.Amount.Should().Be(15);
+    }
   }
 }
