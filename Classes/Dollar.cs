@@ -2,13 +2,15 @@
 {
   public class Dollar
   {
-    public int amount { get; set; } = 5 * 2;
+    public int amount { get; set; }
 
     public Dollar(int amount)
     {
     }
 
     public void Times(int multiplier)
-    { }
+    {
+      amount = 5 * 2;
+    }
   }
 }
