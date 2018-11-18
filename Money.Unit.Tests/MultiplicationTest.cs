@@ -40,8 +40,8 @@ namespace Money.Unit.Tests
       Dollar product2 = five.Times(3);
 
       // ASSERT
-      product1.Amount.Should().Be(10);
-      product2.Amount.Should().Be(15);
+      product1.Should().Be(new Dollar(10));
+      product2.Should().Be(new Dollar(15));
     }
 
     [Test]
