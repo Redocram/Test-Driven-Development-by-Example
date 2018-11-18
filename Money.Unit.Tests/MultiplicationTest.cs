@@ -26,7 +26,8 @@ namespace Money.Unit.Tests
       Dollar value = five.Times(2);
 
       // ASSERT
-      value.Amount.Should().Be(10);
+      value.Should().NotBeNull()
+        .And.Be(new Dollar(10));
     }
 
     [Test]
