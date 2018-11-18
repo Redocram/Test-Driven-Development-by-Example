@@ -36,12 +36,10 @@ namespace Money.Unit.Tests
       Dollar five = new Dollar(5);
 
       // ACT
-      Dollar product1 = five.Times(2);
-      Dollar product2 = five.Times(3);
 
       // ASSERT
-      product1.Should().Be(new Dollar(10));
-      product2.Should().Be(new Dollar(15));
+      five.Times(2).Should().Be(new Dollar(10));
+      five.Times(3).Should().Be(new Dollar(15));
     }
 
     [Test]
