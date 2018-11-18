@@ -46,7 +46,7 @@ namespace Money.Unit.Tests
     {
       // ARRANGE
 
-      // ACT & // ASSERT
+      // ACT & ASSERT
       new Dollar(5).Should().Be(new Dollar(5));
     }
 
@@ -55,9 +55,7 @@ namespace Money.Unit.Tests
     {
       // ARRANGE
 
-      // ACT
-
-      // ASSERT
+      // ACT & ASSERT
       new Dollar(5).Should().NotBe(new Dollar(6));
     }
   }
