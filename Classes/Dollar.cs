@@ -18,7 +18,8 @@ namespace TDDByExample.Classes
 
     public override bool Equals(object obj)
     {
-      return true;
+      Dollar dollarToCompare = (Dollar)obj;
+      return Amount == dollarToCompare.Amount;
     }
   }
 }
