@@ -9,6 +9,7 @@ This repo contains my excercises done following the book [Test Driven Developmen
 
   * Fake it: return a constant and gradually replace constants with variables until you have the real code
   * Obvious Implementation: type in the real implementation
+  * Triangulation: generalyze the code only if you have more examples
 * Refactor - eliminate all the duplication created in just getting the test to work
 
 ## Notes
