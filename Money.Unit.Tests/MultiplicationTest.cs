@@ -31,7 +31,7 @@ namespace Money.Unit.Tests
     }
 
     [Test]
-    public void TestMultiplication()
+    public void TestDollarMultiplication()
     {
       // ARRANGE
       Dollar five = new Dollar(5);
@@ -57,6 +57,17 @@ namespace Money.Unit.Tests
 
       // ACT & ASSERT
       new Dollar(5).Should().NotBe(new Dollar(6));
+    }
+
+    [Test]
+    public void TestFrancMultiplication()
+    {
+      // ARRANGE
+      Franc five = new Franc(5);
+
+      // ACT & ASSERT
+      five.Times(2).Should().Be(new Franc(10));
+      five.Times(3).Should().Be(new Franc(15));
     }
   }
 }
