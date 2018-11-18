@@ -12,6 +12,9 @@ namespace Money.Unit.Tests
   // HashCode()
   // Equal null
   // Equal object
+  // Done. 5 CHF * 2 = 10 CHF
+  // Dollar/Franc duplication
+  // Common equals
   [TestFixture]
   [ExcludeFromCodeCoverage]
   public class MultiplicationTest
