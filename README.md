@@ -5,7 +5,7 @@ This repo contains my excercises done following the book [Test Driven Developmen
 ## Test Driven Development tasks:
 * Make a list, maybe from the requirements, of the tests/task the code should be able to pass/accomplish 
 * Red - write a little test (taken from the list) that doesn't work, perhaps even compile at first
-* Green - make the test work quickly, _committing whatever sins necessary in the process_. There's to ways to get there:
+* Green - make the test compile and work quickly, _committing whatever sins necessary in the process_. There's to ways to get there:
 
   * Fake it: return a constant and gradually replace constants with variables until you have the real code
   * Obvious Implementation: type in the real implementation
