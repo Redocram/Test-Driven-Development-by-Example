@@ -35,9 +35,7 @@ namespace Money.Unit.Tests
       // ARRANGE
       Dollar five = new Dollar(5);
 
-      // ACT
-
-      // ASSERT
+      // ACT & ASSERT
       five.Times(2).Should().Be(new Dollar(10));
       five.Times(3).Should().Be(new Dollar(15));
     }
