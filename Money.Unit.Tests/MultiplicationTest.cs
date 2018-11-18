@@ -5,6 +5,13 @@ using TDDByExample.Classes;
 
 namespace Money.Unit.Tests
 {
+  // TODO:
+  // $5 + 10 CHF =  $10 if CHF:USD is 2:1
+  // Make Dollar.Amount private
+  // Money rounding?
+  // HashCode()
+  // Equal null
+  // Equal object
   [TestFixture]
   [ExcludeFromCodeCoverage]
   public class MultiplicationTest
