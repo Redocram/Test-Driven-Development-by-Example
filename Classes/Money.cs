@@ -1,13 +1,15 @@
 ﻿namespace TDDByExample.Classes
 {
-  public class Money
+  public abstract class Money
   {
-    protected int amount { get; set; }
+    protected int Amount { get; set; }
 
     public override bool Equals(object obj)
     {
       Money moneyToCompare = (Money)obj;
-      return amount == moneyToCompare.amount && moneyToCompare.GetType().Equals(GetType());
+      return Amount == moneyToCompare.Amount && moneyToCompare.GetType().Equals(GetType());
     }
+
+    public abstract Money Times(int multiplier);
   }
 }

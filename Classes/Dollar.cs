@@ -4,12 +4,12 @@
   {
     public Dollar(int amount)
     {
-      this.amount = amount;
+      this.Amount = amount;
     }
 
     public Money Times(int multiplier)
     {
-      return new Dollar(amount * multiplier);
+      return new Dollar(Amount * multiplier);
     }
   }
 }
