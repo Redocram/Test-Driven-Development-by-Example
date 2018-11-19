@@ -6,6 +6,11 @@ namespace TDDByExample.Classes
   {
     protected int Amount { get; set; }
 
+    public Dollar Dollar(int amount)
+    {
+      return new Dollar(amount);
+    }
+
     public override bool Equals(object obj)
     {
       Money moneyToCompare = (Money)obj;

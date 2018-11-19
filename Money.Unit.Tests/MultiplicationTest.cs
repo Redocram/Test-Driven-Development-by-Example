@@ -2,7 +2,6 @@
 using NUnit.Framework;
 using System.Diagnostics.CodeAnalysis;
 using TDDByExample.Classes;
-using TDDByExample.Classes.Extensions;
 using MoneyTDD = TDDByExample.Classes.Money;
 
 namespace Money.Unit.Tests
