@@ -1,9 +1,7 @@
 ﻿namespace TDDByExample.Classes
 {
-  public class Franc
+  public class Franc : Money
   {
-    private int amount { get; set; }
-
     public Franc(int amount)
     {
       this.amount = amount;
