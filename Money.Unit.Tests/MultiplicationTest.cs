@@ -47,9 +47,7 @@ namespace Money.Unit.Tests
     [Test]
     public void Two_Istances_Of_Dollar_With_The_Same_Amount_Should_Be_Equal()
     {
-      // ARRANGE
-
-      // ACT & ASSERT
+      // ARRANGE & ACT & ASSERT
       new Dollar(5).Should().Be(new Dollar(5));
     }
 
@@ -71,6 +69,13 @@ namespace Money.Unit.Tests
       // ACT & ASSERT
       five.Times(2).Should().Be(new Franc(10));
       five.Times(3).Should().Be(new Franc(15));
+    }
+
+    [Test]
+    public void Two_Istances_Of_Franc_With_The_Same_Amount_Should_Be_Equal()
+    {
+      // ARRANGE & ACT & ASSERT
+      new Franc(5).Should().Be(new Franc(5));
     }
   }
 }
