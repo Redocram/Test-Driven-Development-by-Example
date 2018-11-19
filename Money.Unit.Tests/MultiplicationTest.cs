@@ -15,6 +15,7 @@ namespace Money.Unit.Tests
   // Done. 5 CHF * 2 = 10 CHF
   // Dollar/Franc duplication
   // Common equals
+  // Francs != Dollar
   [TestFixture]
   [ExcludeFromCodeCoverage]
   public class MultiplicationTest
@@ -83,6 +84,13 @@ namespace Money.Unit.Tests
     {
       // ARRANGE ACT & ASSERT
       new Dollar(5).Should().NotBe(new Dollar(6));
+    }
+
+    [Test]
+    public void Should_Be_POssible_To_Convert_Franc_Into_Dollar()
+    {
+      // ARRANGE ACT & ASSERT
+      new Franc(5).Should().NotBe(new Dollar(5));
     }
   }
 }
