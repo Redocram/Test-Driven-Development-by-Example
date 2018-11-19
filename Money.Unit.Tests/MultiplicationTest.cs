@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using System.Diagnostics.CodeAnalysis;
 using TDDByExample.Classes;
+using TDDMoney = TDDByExample.Classes.Money;
 
 namespace Money.Unit.Tests
 {
@@ -15,7 +16,8 @@ namespace Money.Unit.Tests
   // Done. 5 CHF * 2 = 10 CHF
   // Dollar/Franc duplication
   // Common equals
-  // Francs != Dollar
+  // Done. Francs != Dollar
+  // Currency
   [TestFixture]
   [ExcludeFromCodeCoverage]
   public class MultiplicationTest
@@ -27,7 +29,7 @@ namespace Money.Unit.Tests
       Dollar five = new Dollar(5);
 
       // ACT
-      Dollar value = five.Times(2);
+      TDDMoney value = five.Times(2);
 
       // ASSERT
       value.Should().NotBeNull()
