@@ -2,7 +2,8 @@
 using NUnit.Framework;
 using System.Diagnostics.CodeAnalysis;
 using TDDByExample.Classes;
-using TDDMoney = TDDByExample.Classes.Money;
+using TDDByExample.Classes.Extensions;
+using MoneyTDD = TDDByExample.Classes.Money;
 
 namespace Money.Unit.Tests
 {
@@ -30,7 +31,7 @@ namespace Money.Unit.Tests
       Dollar five = new Dollar(5);
 
       // ACT
-      TDDMoney value = five.Times(2);
+      MoneyTDD value = five.Times(2);
 
       // ASSERT
       value.Should().NotBeNull()
@@ -97,6 +98,17 @@ namespace Money.Unit.Tests
     }
 
     [Test]
-    public void Money_dollar_Method_Should_Return_a_Instance_Of_Dollars() { }
+    public void Money_dollar_Method_Should_Return_a_Instance_Of_Dollars()
+    {
+      // ARRANGE
+      MoneyTDD money = new MoneyTDD();
+
+      // ACT &
+      MoneyTDD five = money.Dollar(5);
+
+      // ASSERT
+      five.Times(2).Should().Be(new Dollar(10));
+      five.Times(3).Should().Be(new Dollar(15));
+    }
   }
 }
