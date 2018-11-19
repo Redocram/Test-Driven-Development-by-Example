@@ -7,7 +7,7 @@
     public override bool Equals(object obj)
     {
       Money moneyToCompare = (Money)obj;
-      return amount == moneyToCompare.amount;
+      return amount == moneyToCompare.amount && moneyToCompare.GetType().Equals(GetType());
     }
   }
 }
