@@ -1,6 +1,6 @@
 ﻿namespace TDDByExample.Classes
 {
-  public class Dollar
+  public class Dollar : Money
   {
     private int amount { get; set; }
 
