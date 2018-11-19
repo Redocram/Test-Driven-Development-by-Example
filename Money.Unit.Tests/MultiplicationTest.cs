@@ -27,25 +27,26 @@ namespace Money.Unit.Tests
 
     {
       // ARRANGE
-      Dollar five = new Dollar(5);
+      MoneyTDD money = new MoneyTDD();
 
       // ACT
-      MoneyTDD value = five.Times(2);
+      Dollar five = money.Dollar(5);
 
       // ASSERT
-      value.Should().NotBeNull()
-        .And.Be(new Dollar(10));
+      five.Should().NotBeNull()
+        .And.Be(money.Dollar(5));
     }
 
     [Test]
     public void TestDollarMultiplication()
     {
       // ARRANGE
-      Dollar five = new Dollar(5);
+      MoneyTDD money = new MoneyTDD();
+      MoneyTDD five = money.Dollar(5);
 
       // ACT & ASSERT
-      five.Times(2).Should().Be(new Dollar(10));
-      five.Times(3).Should().Be(new Dollar(15));
+      five.Times(2).Should().Be(money.Dollar(10));
+      five.Times(3).Should().Be(money.Dollar(15));
     }
 
     [Test]
