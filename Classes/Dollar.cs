@@ -4,10 +4,10 @@
   {
     public Dollar(int amount)
     {
-      this.Amount = amount;
+      Amount = amount;
     }
 
-    public Money Times(int multiplier)
+    public new Money Times(int multiplier)
     {
       return new Dollar(Amount * multiplier);
     }

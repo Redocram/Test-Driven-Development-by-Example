@@ -1,6 +1,8 @@
-﻿namespace TDDByExample.Classes
+﻿using System;
+
+namespace TDDByExample.Classes
 {
-  public abstract class Money
+  public class Money
   {
     protected int Amount { get; set; }
 
@@ -10,6 +12,9 @@
       return Amount == moneyToCompare.Amount && moneyToCompare.GetType().Equals(GetType());
     }
 
-    public abstract Money Times(int multiplier);
+    public Money Times(int multiplier)
+    {
+      throw new NotImplementedException();
+    }
   }
 }

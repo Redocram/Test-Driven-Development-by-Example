@@ -103,8 +103,8 @@ namespace Money.Unit.Tests
       // ARRANGE
       MoneyTDD money = new MoneyTDD();
 
-      // ACT &
-      MoneyTDD five = money.Dollar(5);
+      // ACT
+      Dollar five = money.Dollar(5);
 
       // ASSERT
       five.Times(2).Should().Be(new Dollar(10));
