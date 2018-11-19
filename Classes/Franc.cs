@@ -11,11 +11,5 @@
     {
       return new Franc(amount * multiplier);
     }
-
-    public override bool Equals(object obj)
-    {
-      Franc francToCompare = (Franc)obj;
-      return amount == francToCompare.amount;
-    }
   }
 }
