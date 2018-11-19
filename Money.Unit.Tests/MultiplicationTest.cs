@@ -77,5 +77,12 @@ namespace Money.Unit.Tests
       // ARRANGE & ACT & ASSERT
       new Franc(5).Should().Be(new Franc(5));
     }
+
+    [Test]
+    public void Two_Istances_Of_Franc_With_A_Different_Amount_Should_Not_Be_Equal()
+    {
+      // ARRANGE ACT & ASSERT
+      new Dollar(5).Should().NotBe(new Dollar(6));
+    }
   }
 }
