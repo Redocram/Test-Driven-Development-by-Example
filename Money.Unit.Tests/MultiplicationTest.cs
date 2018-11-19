@@ -24,6 +24,7 @@ namespace Money.Unit.Tests
   {
     [Test]
     public void Multiplication_Should_Return_A_Valid_Value()
+
     {
       // ARRANGE
       Dollar five = new Dollar(5);
@@ -94,5 +95,8 @@ namespace Money.Unit.Tests
       // ARRANGE ACT & ASSERT
       new Franc(5).Should().NotBe(new Dollar(5));
     }
+
+    [Test]
+    public void Money_dollar_Method_Should_Return_a_Instance_Of_Dollars() { }
   }
 }
